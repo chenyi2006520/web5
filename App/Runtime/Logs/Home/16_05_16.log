@@ -1,0 +1,13 @@
+[ 2016-05-16T14:00:51+08:00 ] 127.0.0.1 /
+ERR: _STORAGE_WRITE_ERROR_:./Data/LastUpdate.php
+
+[ 2016-05-16T15:04:58+08:00 ] 127.0.0.1 /Home/Index/articleView/pinyinkey/zhoudongyu/k_sort/29
+ERR: 参数错误或者未定义:pinyinKey
+
+[ 2016-05-16T15:05:23+08:00 ] 127.0.0.1 /Home/Index/articleView/pinyinkey/zhoudongyu/k_sort/29
+ERR: 参数错误或者未定义:pinyinKey
+
+[ 2016-05-16T15:25:17+08:00 ] 127.0.0.1 /Home/Article/getArticleFileContent/pinyinKey/zhoudongyu/k_sort/30
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=> 'zhoudongyu' And k_sort = 30 ) LIMIT 1' at line 1
+ [ SQL语句 ] : SELECT `k_id`,`k_sort`,`k_md5name`,`k_time`,`k_pinyinName`,`k_newsurl` FROM `b_keyword` WHERE ( k_pinyinName => 'zhoudongyu' And k_sort = 30 ) LIMIT 1  
+

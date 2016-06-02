@@ -1,0 +1,24 @@
+<IfModule mod_rewrite.c>
+  Options +FollowSymlinks
+  RewriteEngine On
+  RewriteBase /
+
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-f  
+  RewriteRule ^(.*)$ index.php/$1 [QSA,PT,L]    
+  
+  RewriteCond %{HTTP_HOST} ^((?!www)\w+)\.ba\.cc$
+  RewriteRule ^/?$  /Home/Index/articleList/pinyinKey/%1 [NC,QSA] 
+  
+  
+  RewriteCond %{HTTP_HOST} (.*)\.ba\.cc
+  RewriteRule "^(.*)\/([0-9]+)\/$" /Home/Index/articleList/pinyinKey/%1/p/$2 [NC]
+  
+  RewriteCond %{HTTP_HOST} (.*)\.ba\.cc
+  RewriteRule "^(.*)\/([0-9]+)\.html$" /Home/Index/articleView/pinyinKey/%1/k_sort/$2 [NC]
+  
+  #RewriteCond %{HTTP_REFERER} localhost:85 [NC,OR]
+  RewriteCond %{REQUEST_URI} ^/(.*)\.html$ [NC]
+  RewriteRule ^/(.*)\.html$ /Home/Index/articleView/pinyinKey/%1 [NC]
+  
+</IfModule>

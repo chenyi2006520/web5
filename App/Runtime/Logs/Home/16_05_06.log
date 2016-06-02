@@ -1,0 +1,3 @@
+[ 2016-05-06T14:32:10+08:00 ] 127.0.0.1 /Home/Article/getkeywords
+ERR: SQLSTATE[HY000] [1049] Unknown database 'bamengDB'
+

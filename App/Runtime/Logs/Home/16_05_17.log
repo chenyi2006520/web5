@@ -1,0 +1,4 @@
+[ 2016-05-17T17:26:03+08:00 ] 127.0.0.1 /Home/Article/getkeywords
+ERR: 1146:Table 'bamengDB.b_constantlyword' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `b_constantlyword`
+
